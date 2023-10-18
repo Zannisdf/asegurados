@@ -19,9 +19,9 @@ export function Navbar({ isLoggedIn, links = [] }) {
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
-          ariaControls="navbarNav"
-          ariaExpanded="false"
-          ariaLabel="Toggle navigation"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -33,7 +33,7 @@ export function Navbar({ isLoggedIn, links = [] }) {
                   className={({ isActive }) =>
                     isActive ? "nav-link active" : "nav-link"
                   }
-                  ariaCurrent="page"
+                  aria-current="page"
                   to={link.href}
                 >
                   {link.text}

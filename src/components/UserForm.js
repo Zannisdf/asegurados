@@ -21,7 +21,7 @@ export function UserForm({ initialValues = DEFAULT_VALUES }) {
   return (
     <form>
       <div className="mb-3">
-        <label for="dni" className="form-label">
+        <label htmlFor="dni" className="form-label">
           Rut
         </label>
         <input
@@ -34,7 +34,7 @@ export function UserForm({ initialValues = DEFAULT_VALUES }) {
         />
       </div>
       <div className="mb-3">
-        <label for="name" className="form-label">
+        <label htmlFor="name" className="form-label">
           Nombre
         </label>
         <input
@@ -47,7 +47,7 @@ export function UserForm({ initialValues = DEFAULT_VALUES }) {
         />
       </div>
       <div className="mb-3">
-        <label for="email" className="form-label">
+        <label htmlFor="email" className="form-label">
           Correo electrónico
         </label>
         <input
@@ -60,7 +60,7 @@ export function UserForm({ initialValues = DEFAULT_VALUES }) {
         />
       </div>
       <div className="mb-3">
-        <label for="phone" className="form-label">
+        <label htmlFor="phone" className="form-label">
           Teléfono
         </label>
         <input
@@ -73,7 +73,7 @@ export function UserForm({ initialValues = DEFAULT_VALUES }) {
         />
       </div>
       <div className="mb-3">
-        <label for="role" className="form-label">
+        <label htmlFor="role" className="form-label">
           Perfil
         </label>
         <select

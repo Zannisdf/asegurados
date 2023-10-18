@@ -4,7 +4,7 @@ export function BrandIcon() {
       width="200"
       height="60"
       viewBox="0 0 370 101.4219731782612"
-      class="css-1j8o68f"
+      className="css-1j8o68f"
     >
       <defs id="SvgjsDefs1253"></defs>
       <g

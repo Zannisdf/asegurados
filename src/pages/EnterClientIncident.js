@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Container } from "../components/Container";
-import { Navbar } from "../components/Navbar";
 import { BrandIcon } from "../components/BrandIcon";
 import { Link } from "react-router-dom";
 
@@ -30,7 +29,7 @@ export function EnterClientIncident() {
           </h3>
           <form onSubmit={handleSubmit}>
             <div className="mb-3">
-              <label htmlhtmlFor="policyId" className="form-label">
+              <label htmlFor="policyId" className="form-label">
                 Número de póliza
               </label>
               <input

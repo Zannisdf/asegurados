@@ -1,13 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import { BrandIcon } from "./BrandIcon";
 
-// isLoggedIn={true} para las pantallas que son con inicio de sesión
-// links es un arreglo de objetos como se muestra en el ejemplo:
-// const links = [
-//   { href: '/mi-ruta', text: 'Texto visible del link' },
-//   ... otros links
-// ]
-export function Navbar({ isLoggedIn, links = [] }) {
+export function Navbar({ links = [] }) {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
       <div className="container">
@@ -42,13 +36,11 @@ export function Navbar({ isLoggedIn, links = [] }) {
             ))}
           </ul>
         </div>
-        {isLoggedIn ? (
-          <div>
-            <Link clLinkssName="btn btn-outline-secondary" to="/">
-              Salir
-            </Link>
-          </div>
-        ) : null}
+        <div>
+          <Link className="btn btn-outline-secondary" to="/">
+            Salir
+          </Link>
+        </div>
       </div>
     </nav>
   );

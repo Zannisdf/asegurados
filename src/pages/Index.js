@@ -2,6 +2,7 @@ import { Container } from "../components/Container";
 import { BrandIcon } from "../components/BrandIcon";
 import { PageTitle } from "../components/PageTitle";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export function Index() {
   const [formData, setFormData] = useState({
@@ -62,9 +63,9 @@ export function Index() {
                 onChange={handleInputChange}
               />
             </div>
-            <button type="submit" className="btn btn-primary d-block my-4">
+            <Link to="/callcenter/ingresar-denuncia" className="btn btn-primary d-block my-4">
               Iniciar sesión
-            </button>
+            </Link>
           </form>
         </div>
       </div>
